@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CryptoMarketIntel — Join the Community</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  /* ============================================================
+     DESIGN TOKENS
+     ============================================================ */
+  :root {
+    --bg: #0B0E13;
+    --card: #141821;
+    --line: #232836;
+    --ink: #F2F4F8;
+    --muted: #8B93A3;
+    --accent: #F4C542;      /* gold — crypto/trading brand color */
+    --accent-ink: #14171f;
+    --radius-lg: 22px;
+    --radius-sm: 10px;
+    --maxw: 520px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Inter', system-ui, sans-serif;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    padding: 56px 20px 70px;
+  }
+
+  .page { max-width: var(--maxw); margin: 0 auto; text-align: center; }
+
+  /* ============================================================
+     HERO — handle, heading, subheading, CTA button
+     ============================================================ */
+  .handle {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--accent);
+    letter-spacing: 0.04em;
+    margin-bottom: 14px;
+  }
+
+  h1 {
+    font-family: 'Sora', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.25;
+    margin-bottom: 14px;
+  }
+
+  .subheading {
+    color: var(--muted);
+    font-size: 15px;
+    max-width: 400px;
+    margin: 0 auto 28px;
+  }
+
+  /* The main call-to-action button. JS below adds a small "pulse"
+     effect on load to draw the eye, and a hover lift. */
+  .btn-join {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 16px 32px;
+    border-radius: var(--radius-sm);
+    background: var(--accent);
+    color: var(--accent-ink);
+    font-weight: 700;
+    font-size: 15.5px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 10px 24px rgba(244,197,66,0.28);
+    transition: transform 150ms ease, box-shadow 150ms ease;
+  }
+
+  .btn-join:hover { transform: translateY(-2px); box-shadow: 0 14px 30px rgba(244,197,66,0.38); }
+  .btn-join:active { transform: translateY(0); }
+
+  /* ============================================================
+     SERVICES SECTION — what members get
+     ============================================================ */
+  .services {
+    margin-top: 48px;
+    text-align: left;
+  }
+
+  .services h2 {
+    font-family: 'Sora', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    text-align: center;
+    margin-bottom: 18px;
+  }
+
+  .service-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .service-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    padding: 16px 18px;
+  }
+
+  .service-item svg {
+    flex-shrink: 0;
+    margin-top: 2px;
+    color: var(--accent);
+  }
+
+  .service-item p {
+    font-size: 14.5px;
+    color: var(--ink);
+  }
+
+  /* ============================================================
+     FOOTER
+     ============================================================ */
+  .footer {
+    margin-top: 40px;
+    color: var(--muted);
+    font-size: 12px;
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- ============ HERO ============ -->
+  <span class="handle">@CryptoMarketIntel</span>
+  <h1>Get the Market Intel Before Everyone Else</h1>
+  <p class="subheading">Join the private Telegram community for real-time crypto signals, market breakdowns, and direct access to the research most traders never see.</p>
+
+  <!-- 
+    THIS IS THE ONLY LINK YOU NEED TO EDIT:
+    Point it at your paid Telegram checkout (e.g. Whop, which can
+    auto-generate a Telegram invite link after payment).
+  -->
+  <a class="btn-join" id="joinBtn" href="https://whop.com/checkout/plan_df243JXHtzZpy" target="_blank" rel="noopener">
+    Join the Community →
+  </a>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="services">
+    <h2>What You Get</h2>
+    <div class="service-list">
+
+      <div class="service-item">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>
+        <p>Real-time crypto trading signals sent directly to the Telegram group</p>
+      </div>
+
+      <div class="service-item">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>
+        <p>Daily market breakdowns covering BTC, ETH, and top altcoins</p>
+      </div>
+
+      <div class="service-item">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>
+        <p>Technical analysis breakdowns — chart setups, key levels, trade ideas</p>
+      </div>
+
+      <div class="service-item">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>
+        <p>Direct access to ask questions and get feedback on your own trades</p>
+      </div>
+
+      <div class="service-item">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>
+        <p>An active community of serious traders — not a silent channel</p>
+      </div>
+
+    </div>
+  </section>
+
+  <p class="footer">© 2026 CryptoMarketIntel. All rights reserved.</p>
+
+</div>
+
+<script>
+  /* ============================================================
+     A small bit of JavaScript to make the CTA button pulse once
+     when the page loads, drawing the eye to the primary action.
+     Respects prefers-reduced-motion — no animation forced on
+     visitors who've asked their device to limit motion.
+     ============================================================ */
+  const joinBtn = document.getElementById('joinBtn');
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if (!prefersReducedMotion) {
+    joinBtn.animate(
+      [
+        { transform: 'scale(1)' },
+        { transform: 'scale(1.05)' },
+        { transform: 'scale(1)' }
+      ],
+      { duration: 700, delay: 400, easing: 'ease-in-out' }
+    );
+  }
+</script>
+
+</body>
+</html>
